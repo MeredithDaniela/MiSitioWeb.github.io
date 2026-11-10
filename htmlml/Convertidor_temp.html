@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi sitio web</title>
+        <!--Hacemos referencia a los estilos de mi pagina-->
+        <link rel="stylesheet" href="estiloss.css">
+    </head>
+    <body>
+        <header><img src="fondoooo.jpeg"></header>
+    <nav>
+        <ul>
+            <li><a href="#">Conoceme</a>
+                <ul>
+                    <li><a href="Informacion.html">Informacion personal</a></li>
+                    <li><a href="Pasatiempos.html">Pasatiempos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Segunda parcial</a>
+                <ul>
+                    <li><a href="practica1.html">Practica uno</a></li>
+                    <li><a href="posiciones.html">Posiciones</a></li>
+                    <li><a href="mundodigital.html">Mi mundo digital</a></li>
+                    <li><a href="comunidad.html">Mi comunidad digital interactiva</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Tercer parcial</a>
+                <ul>
+                    <li><a href="tercer_practica1.html">Practica uno</a></li>
+                    <li><a href="Convertidor_temp.html">Convertidor de temperatura</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section>
+            <aside class="principal">
+                <h2>Conversor de temperaturas</h2>
+
+                <label for="temperatura">Temperatura:</label><br>
+                <input type="number" id="temperatura" step="any" placeholder="Ingresa la temperatura"><br><br>
+
+                <label for="tipoConversion">Tipo de conversion:</label><br>
+                <select id="tipoConversion">
+                    <option value="cToF">Celsius a Fahrenheit</option>
+                    <option value="fToC">Fahrenheit a Celsius</option>
+                </select><br><br>
+
+                <button id="btnConvertir" onclick="convertir()">Convertir</button>
+
+                <div id="resultado"></div>
+            </aside>
+            <aside class="secundario" 
+                    style="display: flex; justify-content: center; align-items: center; text-align: center;">
+                    <img src="temperatura.png" alt="Logo" style="margin: 0 auto; display: block;">
+            </aside>
+        </section>
+
+    <footer>
+        <img src="LOGO.jpeg" alt="Logo">
+        <div>
+            <p><strong>Universidad de Colima</strong></p>
+            <p>Bachillerato 8</p>
+            <p>Programacion en Internet I</p>
+        </div>
+    </footer>
+
+    <!-- Enlace a la logica en JS -->
+    <script src="convertidor.js"></script>
+</body>
+</html>
