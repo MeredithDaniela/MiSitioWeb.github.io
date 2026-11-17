@@ -311,3 +311,45 @@ aside img{
 #resultado:empty {
     display: none;
 }
+
+/* ==========================================================================
+   ESTILOS PARA EL SISTEMA DE CALIFICACIONES (calificaciones.html)
+   ========================================================================== */
+
+#nombre,
+#calif1,
+#calif2,
+#calif3 {
+    width: 100%;
+    max-width: 320px;
+    padding: 8px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#nombre:focus,
+#calif1:focus,
+#calif2:focus,
+#calif3:focus {
+    border-color: #990085;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 92, 153, 0.3);
+}
+
+#btnCalcular {
+    background-color: #7d2e6c;
+    color: #ffffff;
+    border: none;
+    padding: 9px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#btnCalcular:hover {
+    background-color: #5e1b50;
+}
